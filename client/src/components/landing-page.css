@@ -1,0 +1,112 @@
+body {
+    background: linear-gradient(to bottom, #1e3c72, #2a5298); /* Christmas night vibe */
+    color: white;
+    font-family: 'Figtree', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.heart-text {
+    font-size: 28px;
+    color: #fff;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+
+.heart-text a {
+    color: #ffeb3b;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.heart-text a:hover {
+    color: #ff5722;
+}
+
+.username-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.username-input label {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: white;
+    font-family: 'Lobster', cursive;
+}
+
+.username-input input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 250px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.username-input input:focus {
+    border-color: #ff5722;
+    box-shadow: 0 0 10px #ff5722;
+    outline: none;
+}
+
+.username-input button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #e52b2b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.username-input button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    background-color: #ff4848;
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px;
+    font-size: 1rem;
+    color: white;
+    opacity: 0.8;
+    animation: fall 5s linear infinite, sway 2s ease-in-out infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh);
+    }
+}
+
+@keyframes sway {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+}
